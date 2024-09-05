@@ -1,0 +1,13 @@
+[Unit]
+Description=FunyVPN
+
+[Service]
+User=root
+Type=simple
+ExecStart=/etc/udp/udp-custom server
+WorkingDirectory=/etc/udp/
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=default.target
